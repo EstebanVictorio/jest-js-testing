@@ -4,13 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "7.5.5",
     "@babel/preset-env": "7.5.5",
+    "@babel/runtime": "7.5.5",
+    "@types/jest": "24.0.18",
     "babel-jest": "24.9.0",
     "babel-polyfill": "6.26.0",
     "jest": "24.9.0"
   },
   "scripts": {
     "test": "jest",
-    "test:coverage":"jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "2.2.1"
   }
 }
